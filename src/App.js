@@ -7,7 +7,7 @@ const App = () => {
 
   const APP_ID = process.env.REACT_APP_EDAMAM_API_ID;
 
-  const APP_KEY = process.env.REACT_APP_EDAMAM_API_KEY;
+  const APP_KEY = '9c72b9bb0f4a96af402080b935881d14';
 
   useEffect(() => {
     getRecipes();
@@ -23,7 +23,7 @@ const App = () => {
     <div className='App'>
       <form className='search-form'>
         <input className='search-bar' type="text" />
-        <button className='search-btn' type='submit'> Search </button>
+        <button onClick={console.log("env", process.env.REACT_APP_EDAMAM_API_KEY)} className='search-btn' type='submit'> Search </button>
       </form>
 
     </div>
